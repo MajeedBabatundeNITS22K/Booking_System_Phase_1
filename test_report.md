@@ -1,4 +1,28 @@
-# ZAP by Checkmarx Scanning Report
+
+## Penetration Testing Report  
+---
+# 1. Introduction
+
+This report documents the penetration testing performed on the **Phase 1 Booking System registration page**.  
+The goal was to identify vulnerabilities related to:
+
+- Input validation  
+- Authentication and registration logic  
+- Session handling  
+- Error messaging  
+- Security headers  
+- Data processing (e.g., age validation, email validation)
+
+**Tools Used:**  
+- OWASP ZAP (Passive + Active Scan)  
+- Manual testing (browser input manipulation, SQL payloads, logic testing)  
+- Docker local environment (Phase 1 deployment)  
+
+# 2. Manual Testing
+
+Manual penetration testing was performed before running ZAP. Several significant vulnerabilities were discovered
+
+# 3. ZAP by Checkmarx Scanning Report
 
 ## Summary of Alerts
 
@@ -66,3 +90,4 @@
 
 ## Conclusion
 This ZAP scanning report highlights multiple security vulnerabilities, including critical risks like SQL Injection and Path Traversal. Immediate remediation is recommended, particularly implementing proper input validation, enforcing security headers, and ensuring the application does not expose unnecessary file system access. Strengthening security controls can significantly reduce potential attack vectors.
+
